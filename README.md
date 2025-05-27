@@ -20,7 +20,7 @@ Preloaders can be customized with the following parameters:
         backgroundColor:  Colors.black38,
         backgroundOpacity: .5,
         child: Builder(builder: (context) {
-          var preloader = SimplePreloader.of(context)!;
+          var preloader = SimplePreloader.of(context);
           ...
           preloader.show();
           ...
