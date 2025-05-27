@@ -11,9 +11,7 @@ This widget is a simple and functional preloader, ideal for enhancing the experi
 #### Customization
 Preloaders can be customized with the following parameters:
 
-```
-    // default values
-    
+```dart
     SimplePreloader(
        type = PreloaderType.DEFAULT,
         indicatorColor: Colors.white,
@@ -21,6 +19,13 @@ Preloaders can be customized with the following parameters:
         containerOpacity: .5,
         backgroundColor:  Colors.black38,
         backgroundOpacity: .5,
+        child: Builder(builder: (context) {
+          var preloader = SimplePreloader.of(context)!;
+          ...
+          preloader.show();
+          ...
+          preloader.hide();
+        }),
     );
 ```
 

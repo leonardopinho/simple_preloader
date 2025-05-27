@@ -48,7 +48,7 @@ class MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    selectedItem = lst[0];
+    selectedItem = lst.first;
   }
 
   @override
